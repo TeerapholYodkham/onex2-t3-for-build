@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    /* Base Options: */
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "target": "es2022",
+    "allowJs": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    /* Strictness */
+    "strict": true,
+    "checkJs": true,
+    "allowImportingTsExtensions": true,
+    /* Bundled projects */
+    "lib": ["dom", "dom.iterable", "ES2022", "webworker"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "incremental": true,
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["./npm-cache/**/*", "./out/**/*", "./node_modules/**/*", "**/*.spec.ts", "**/*.e2e.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".storybook/*.ts",
+    ".next/types/**/*.ts",
+    "**/*.mts",
+    "types/**/*.d.ts",
+    "_redux/features/balance/actionApi.js"
+  ]
+}
