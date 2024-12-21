@@ -8,7 +8,6 @@ import { usePathname } from 'next/navigation'
 const LoginPage = () => {
   // const { _t } = useTranslator()
   const _t = (val: string, valu2: string) => {return valu2 ? val : val}
-  
   const path: string | null = usePathname()
 
   return (
